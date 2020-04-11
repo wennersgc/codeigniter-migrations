@@ -17,7 +17,12 @@
 		"paragonie/random_compat": "Provides better randomness in PHP 5.x"
 	},
 	"require-dev": {
-		"mikey179/vfsStream": "1.1.*",
 		"phpunit/phpunit": "4.* || 5.*"
-	}
+	},
+  "scripts": {
+	"cria-migration": "php index.php matches create:migration",
+	"executa-migration": "php index.php matches do:migration",
+	"desfaz-migration": "php index.php matches undo:migration",
+	"reseta-migration": "php index.php matches reset:migration"
+  }
 }

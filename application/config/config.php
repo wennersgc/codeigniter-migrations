@@ -54,6 +54,8 @@ $config['index_page'] = 'index.php';
 */
 $config['uri_protocol']	= 'REQUEST_URI';
 
+$config['uri_protocol'] = isset($_SERVER['REQUEST_URI']) ? 'PATH_INFO' : 'CLI';
+
 /*
 |--------------------------------------------------------------------------
 | URL suffix

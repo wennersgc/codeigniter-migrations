@@ -3,6 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Migration_Add_blog extends CI_Migration
 {
+	private $table = 'blog';
 
 	public function __construct()
 	{
@@ -28,12 +29,12 @@ class Migration_Add_blog extends CI_Migration
 			),
 		));
 		$this->dbforge->add_key('blog_id', TRUE);
-		$this->dbforge->create_table('blog');
+		$this->dbforge->create_table($this->table);
 	}
 
 	public function down()
 	{
-		$this->dbforge->drop_table('blog');
+		$this->dbforge->drop_table($this->table);
 	}
 
 }

@@ -58,13 +58,12 @@ class Migration_Add_endereco extends CI_Migration
 
 		$this->dbforge->add_key('endereco_id', true);
 		$this->dbforge->create_table($this->table);
-		$this->db->query(add_foreign_key($this->table,'autor_id','autor(autor_id)', 'CASCADE', 'CASCADE'));
-
 	}
 
 	public function down()
 	{
-
+		$this->db->query(drop_foreign_key($this->table, 'autor_id'));
+		$this->dbforge->drop_table($this->table);
 	}
 
 }
