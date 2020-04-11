@@ -1,4 +1,4 @@
 ###################
-Migrations - CodeIgniter 3.x
+## Migrations - CodeIgniter 3.x
 ###################
 
