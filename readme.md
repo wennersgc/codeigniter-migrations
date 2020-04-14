@@ -15,5 +15,5 @@
 
 ### Links
 
-* [Documentação Codeigniter] (https://codeigniter.com/userguide3/index.html)
-* [Eloquent] (https://laravel.com/docs/7.x/eloquent)
+* <[Documentação Codeigniter] (https://codeigniter.com/userguide3/index.html)>
+* <[Eloquent] (https://laravel.com/docs/7.x/eloquent)>
