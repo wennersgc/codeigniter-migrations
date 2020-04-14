@@ -1,6 +1,6 @@
 ###################
-Migrations - CodeIgniter
+CodeIgniter - Migrations - Eloquent
 ###################
 
-Controle da evolução da base de dados usando migrations no CodeIgniter.
-Exemplo implementado para ser usado em projetos reais.
+* Implementaçõ do controle da evolução da base de dados usando migrations no CodeIgniter.
+* Integração do CodeIgniter com o Eloquent - ORM 
