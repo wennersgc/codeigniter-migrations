@@ -15,5 +15,5 @@
 
 ### Links
 
-* [Codeigniter](https://codeigniter.com/)
+* [Codeigniter](https://codeigniter.com/){:target="_blank"}.
 * [Eloquent](https://laravel.com/docs/7.x/eloquent)
