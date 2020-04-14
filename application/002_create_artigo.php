@@ -2,16 +2,19 @@
 
 use Illuminate\Database\Capsule\Manager as Capsule;
 
-class {{MIGRATION}} extends {{MI_EXTENDS}}_Migration
+class Migration_Create_artigo extends CI_Migration
 {
-	private $table = 'nome-tabela';
+	private $table = 'artigos';
 
     	public function up()
     	{
     	   Capsule::schema()->create($this->table, function ($table){
-    	   		$table->bigincrements('primary_key');
-    	   		$table->string('campo');
+    	   		$table->bigIncrements('id');
+    	   		$table->string('titulo');
+    	   		$table->longText('artigo');
+    	   		$table->bigInteger('autor_id')->unsigned();
     	   		$table->timestamps();
+    	   		$table->foreign('autor_id')->references('id')->on('autores');
     	   });
         }
 
